@@ -1,0 +1,504 @@
+2021-05-28 20:04:16.606 500 "GET http 127.0.0.1:8199 /hello/db HTTP/1.1" 0.001, 127.0.0.1, "", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+Stack:
+1. runtime error: invalid memory address or nil pointer dereference
+   1).  github.com/gogf/gf/net/ghttp.niceCallFunc.func1
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_func.go:38
+   2).  master_home_api/app/api.(*helloApi).Db
+    	/Users/zhaohuinan/Code/work/GITLAB/master_home_api/app/api/hello.go:35
+   3).  github.com/gogf/gf/net/ghttp.(*middleware).Next.func1.6
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_request_middleware.go:95
+   4).  github.com/gogf/gf/net/ghttp.niceCallFunc
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_func.go:46
+   5).  github.com/gogf/gf/net/ghttp.(*middleware).Next.func1
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_request_middleware.go:94
+   6).  github.com/gogf/gf/util/gutil.TryCatch
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/util/gutil/gutil.go:46
+   7).  github.com/gogf/gf/net/ghttp.(*middleware).Next
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_request_middleware.go:47
+   8).  github.com/gogf/gf/net/ghttp.(*Server).ServeHTTP
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_server_handler.go:122
+2. runtime error: invalid memory address or nil pointer dereference
+
+2021-05-28 20:04:48.887 500 "GET http 127.0.0.1:8199 /hello/db HTTP/1.1" 0.001, 127.0.0.1, "", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+Stack:
+1. runtime error: invalid memory address or nil pointer dereference
+   1).  github.com/gogf/gf/net/ghttp.niceCallFunc.func1
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_func.go:38
+   2).  master_home_api/app/api.(*helloApi).Db
+    	/Users/zhaohuinan/Code/work/GITLAB/master_home_api/app/api/hello.go:35
+   3).  github.com/gogf/gf/net/ghttp.(*middleware).Next.func1.6
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_request_middleware.go:95
+   4).  github.com/gogf/gf/net/ghttp.niceCallFunc
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_func.go:46
+   5).  github.com/gogf/gf/net/ghttp.(*middleware).Next.func1
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_request_middleware.go:94
+   6).  github.com/gogf/gf/util/gutil.TryCatch
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/util/gutil/gutil.go:46
+   7).  github.com/gogf/gf/net/ghttp.(*middleware).Next
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_request_middleware.go:47
+   8).  github.com/gogf/gf/net/ghttp.(*Server).ServeHTTP
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_server_handler.go:122
+2. runtime error: invalid memory address or nil pointer dereference
+
+2021-05-28 20:05:19.914 500 "GET http 127.0.0.1:8199 /hello/db HTTP/1.1" 0.000, 127.0.0.1, "", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+Stack:
+1. runtime error: invalid memory address or nil pointer dereference
+   1).  github.com/gogf/gf/net/ghttp.niceCallFunc.func1
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_func.go:38
+   2).  master_home_api/app/api.(*helloApi).Db
+    	/Users/zhaohuinan/Code/work/GITLAB/master_home_api/app/api/hello.go:35
+   3).  github.com/gogf/gf/net/ghttp.(*middleware).Next.func1.6
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_request_middleware.go:95
+   4).  github.com/gogf/gf/net/ghttp.niceCallFunc
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_func.go:46
+   5).  github.com/gogf/gf/net/ghttp.(*middleware).Next.func1
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_request_middleware.go:94
+   6).  github.com/gogf/gf/util/gutil.TryCatch
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/util/gutil/gutil.go:46
+   7).  github.com/gogf/gf/net/ghttp.(*middleware).Next
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_request_middleware.go:47
+   8).  github.com/gogf/gf/net/ghttp.(*Server).ServeHTTP
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_server_handler.go:122
+2. runtime error: invalid memory address or nil pointer dereference
+
+2021-05-28 20:05:23.115 500 "GET http 127.0.0.1:8199 /hello/db HTTP/1.1" 0.000, 127.0.0.1, "", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+Stack:
+1. runtime error: invalid memory address or nil pointer dereference
+   1).  github.com/gogf/gf/net/ghttp.niceCallFunc.func1
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_func.go:38
+   2).  master_home_api/app/api.(*helloApi).Db
+    	/Users/zhaohuinan/Code/work/GITLAB/master_home_api/app/api/hello.go:35
+   3).  github.com/gogf/gf/net/ghttp.(*middleware).Next.func1.6
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_request_middleware.go:95
+   4).  github.com/gogf/gf/net/ghttp.niceCallFunc
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_func.go:46
+   5).  github.com/gogf/gf/net/ghttp.(*middleware).Next.func1
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_request_middleware.go:94
+   6).  github.com/gogf/gf/util/gutil.TryCatch
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/util/gutil/gutil.go:46
+   7).  github.com/gogf/gf/net/ghttp.(*middleware).Next
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_request_middleware.go:47
+   8).  github.com/gogf/gf/net/ghttp.(*Server).ServeHTTP
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_server_handler.go:122
+2. runtime error: invalid memory address or nil pointer dereference
+
+2021-05-28 20:05:23.308 500 "GET http 127.0.0.1:8199 /hello/db HTTP/1.1" 0.000, 127.0.0.1, "", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+Stack:
+1. runtime error: invalid memory address or nil pointer dereference
+   1).  github.com/gogf/gf/net/ghttp.niceCallFunc.func1
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_func.go:38
+   2).  master_home_api/app/api.(*helloApi).Db
+    	/Users/zhaohuinan/Code/work/GITLAB/master_home_api/app/api/hello.go:35
+   3).  github.com/gogf/gf/net/ghttp.(*middleware).Next.func1.6
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_request_middleware.go:95
+   4).  github.com/gogf/gf/net/ghttp.niceCallFunc
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_func.go:46
+   5).  github.com/gogf/gf/net/ghttp.(*middleware).Next.func1
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_request_middleware.go:94
+   6).  github.com/gogf/gf/util/gutil.TryCatch
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/util/gutil/gutil.go:46
+   7).  github.com/gogf/gf/net/ghttp.(*middleware).Next
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_request_middleware.go:47
+   8).  github.com/gogf/gf/net/ghttp.(*Server).ServeHTTP
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_server_handler.go:122
+2. runtime error: invalid memory address or nil pointer dereference
+
+2021-05-28 20:05:23.466 500 "GET http 127.0.0.1:8199 /hello/db HTTP/1.1" 0.000, 127.0.0.1, "", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+Stack:
+1. runtime error: invalid memory address or nil pointer dereference
+   1).  github.com/gogf/gf/net/ghttp.niceCallFunc.func1
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_func.go:38
+   2).  master_home_api/app/api.(*helloApi).Db
+    	/Users/zhaohuinan/Code/work/GITLAB/master_home_api/app/api/hello.go:35
+   3).  github.com/gogf/gf/net/ghttp.(*middleware).Next.func1.6
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_request_middleware.go:95
+   4).  github.com/gogf/gf/net/ghttp.niceCallFunc
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_func.go:46
+   5).  github.com/gogf/gf/net/ghttp.(*middleware).Next.func1
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_request_middleware.go:94
+   6).  github.com/gogf/gf/util/gutil.TryCatch
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/util/gutil/gutil.go:46
+   7).  github.com/gogf/gf/net/ghttp.(*middleware).Next
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_request_middleware.go:47
+   8).  github.com/gogf/gf/net/ghttp.(*Server).ServeHTTP
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_server_handler.go:122
+2. runtime error: invalid memory address or nil pointer dereference
+
+2021-05-28 20:05:23.694 500 "GET http 127.0.0.1:8199 /hello/db HTTP/1.1" 0.000, 127.0.0.1, "", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+Stack:
+1. runtime error: invalid memory address or nil pointer dereference
+   1).  github.com/gogf/gf/net/ghttp.niceCallFunc.func1
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_func.go:38
+   2).  master_home_api/app/api.(*helloApi).Db
+    	/Users/zhaohuinan/Code/work/GITLAB/master_home_api/app/api/hello.go:35
+   3).  github.com/gogf/gf/net/ghttp.(*middleware).Next.func1.6
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_request_middleware.go:95
+   4).  github.com/gogf/gf/net/ghttp.niceCallFunc
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_func.go:46
+   5).  github.com/gogf/gf/net/ghttp.(*middleware).Next.func1
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_request_middleware.go:94
+   6).  github.com/gogf/gf/util/gutil.TryCatch
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/util/gutil/gutil.go:46
+   7).  github.com/gogf/gf/net/ghttp.(*middleware).Next
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_request_middleware.go:47
+   8).  github.com/gogf/gf/net/ghttp.(*Server).ServeHTTP
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_server_handler.go:122
+2. runtime error: invalid memory address or nil pointer dereference
+
+2021-05-28 20:05:23.877 500 "GET http 127.0.0.1:8199 /hello/db HTTP/1.1" 0.000, 127.0.0.1, "", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+Stack:
+1. runtime error: invalid memory address or nil pointer dereference
+   1).  github.com/gogf/gf/net/ghttp.niceCallFunc.func1
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_func.go:38
+   2).  master_home_api/app/api.(*helloApi).Db
+    	/Users/zhaohuinan/Code/work/GITLAB/master_home_api/app/api/hello.go:35
+   3).  github.com/gogf/gf/net/ghttp.(*middleware).Next.func1.6
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_request_middleware.go:95
+   4).  github.com/gogf/gf/net/ghttp.niceCallFunc
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_func.go:46
+   5).  github.com/gogf/gf/net/ghttp.(*middleware).Next.func1
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_request_middleware.go:94
+   6).  github.com/gogf/gf/util/gutil.TryCatch
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/util/gutil/gutil.go:46
+   7).  github.com/gogf/gf/net/ghttp.(*middleware).Next
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_request_middleware.go:47
+   8).  github.com/gogf/gf/net/ghttp.(*Server).ServeHTTP
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_server_handler.go:122
+2. runtime error: invalid memory address or nil pointer dereference
+
+2021-05-28 20:05:24.064 500 "GET http 127.0.0.1:8199 /hello/db HTTP/1.1" 0.000, 127.0.0.1, "", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+Stack:
+1. runtime error: invalid memory address or nil pointer dereference
+   1).  github.com/gogf/gf/net/ghttp.niceCallFunc.func1
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_func.go:38
+   2).  master_home_api/app/api.(*helloApi).Db
+    	/Users/zhaohuinan/Code/work/GITLAB/master_home_api/app/api/hello.go:35
+   3).  github.com/gogf/gf/net/ghttp.(*middleware).Next.func1.6
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_request_middleware.go:95
+   4).  github.com/gogf/gf/net/ghttp.niceCallFunc
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_func.go:46
+   5).  github.com/gogf/gf/net/ghttp.(*middleware).Next.func1
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_request_middleware.go:94
+   6).  github.com/gogf/gf/util/gutil.TryCatch
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/util/gutil/gutil.go:46
+   7).  github.com/gogf/gf/net/ghttp.(*middleware).Next
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_request_middleware.go:47
+   8).  github.com/gogf/gf/net/ghttp.(*Server).ServeHTTP
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_server_handler.go:122
+2. runtime error: invalid memory address or nil pointer dereference
+
+2021-05-28 20:07:07.133 500 "GET http 127.0.0.1:8199 /hello/db HTTP/1.1" 0.000, 127.0.0.1, "", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+Stack:
+1. runtime error: invalid memory address or nil pointer dereference
+   1).  github.com/gogf/gf/net/ghttp.niceCallFunc.func1
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_func.go:38
+   2).  master_home_api/app/api.(*helloApi).Db
+    	/Users/zhaohuinan/Code/work/GITLAB/master_home_api/app/api/hello.go:35
+   3).  github.com/gogf/gf/net/ghttp.(*middleware).Next.func1.6
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_request_middleware.go:95
+   4).  github.com/gogf/gf/net/ghttp.niceCallFunc
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_func.go:46
+   5).  github.com/gogf/gf/net/ghttp.(*middleware).Next.func1
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_request_middleware.go:94
+   6).  github.com/gogf/gf/util/gutil.TryCatch
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/util/gutil/gutil.go:46
+   7).  github.com/gogf/gf/net/ghttp.(*middleware).Next
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_request_middleware.go:47
+   8).  github.com/gogf/gf/net/ghttp.(*Server).ServeHTTP
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_server_handler.go:122
+2. runtime error: invalid memory address or nil pointer dereference
+
+2021-05-28 20:10:36.700 500 "GET http 127.0.0.1:8199 /hello/db HTTP/1.1" 0.000, 127.0.0.1, "", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+Stack:
+1. runtime error: invalid memory address or nil pointer dereference
+   1).  github.com/gogf/gf/net/ghttp.niceCallFunc.func1
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_func.go:38
+   2).  master_home_api/app/api.(*helloApi).Db
+    	/Users/zhaohuinan/Code/work/GITLAB/master_home_api/app/api/hello.go:36
+   3).  github.com/gogf/gf/net/ghttp.(*middleware).Next.func1.6
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_request_middleware.go:95
+   4).  github.com/gogf/gf/net/ghttp.niceCallFunc
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_func.go:46
+   5).  github.com/gogf/gf/net/ghttp.(*middleware).Next.func1
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_request_middleware.go:94
+   6).  github.com/gogf/gf/util/gutil.TryCatch
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/util/gutil/gutil.go:46
+   7).  github.com/gogf/gf/net/ghttp.(*middleware).Next
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_request_middleware.go:47
+   8).  github.com/gogf/gf/net/ghttp.(*Server).ServeHTTP
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_server_handler.go:122
+2. runtime error: invalid memory address or nil pointer dereference
+
+2021-05-28 20:10:38.480 500 "GET http 127.0.0.1:8199 /hello/db HTTP/1.1" 0.000, 127.0.0.1, "", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+Stack:
+1. runtime error: invalid memory address or nil pointer dereference
+   1).  github.com/gogf/gf/net/ghttp.niceCallFunc.func1
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_func.go:38
+   2).  master_home_api/app/api.(*helloApi).Db
+    	/Users/zhaohuinan/Code/work/GITLAB/master_home_api/app/api/hello.go:36
+   3).  github.com/gogf/gf/net/ghttp.(*middleware).Next.func1.6
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_request_middleware.go:95
+   4).  github.com/gogf/gf/net/ghttp.niceCallFunc
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_func.go:46
+   5).  github.com/gogf/gf/net/ghttp.(*middleware).Next.func1
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_request_middleware.go:94
+   6).  github.com/gogf/gf/util/gutil.TryCatch
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/util/gutil/gutil.go:46
+   7).  github.com/gogf/gf/net/ghttp.(*middleware).Next
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_request_middleware.go:47
+   8).  github.com/gogf/gf/net/ghttp.(*Server).ServeHTTP
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_server_handler.go:122
+2. runtime error: invalid memory address or nil pointer dereference
+
+2021-05-28 20:10:39.794 500 "GET http 127.0.0.1:8199 /hello/db HTTP/1.1" 0.000, 127.0.0.1, "", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+Stack:
+1. runtime error: invalid memory address or nil pointer dereference
+   1).  github.com/gogf/gf/net/ghttp.niceCallFunc.func1
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_func.go:38
+   2).  master_home_api/app/api.(*helloApi).Db
+    	/Users/zhaohuinan/Code/work/GITLAB/master_home_api/app/api/hello.go:36
+   3).  github.com/gogf/gf/net/ghttp.(*middleware).Next.func1.6
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_request_middleware.go:95
+   4).  github.com/gogf/gf/net/ghttp.niceCallFunc
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_func.go:46
+   5).  github.com/gogf/gf/net/ghttp.(*middleware).Next.func1
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_request_middleware.go:94
+   6).  github.com/gogf/gf/util/gutil.TryCatch
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/util/gutil/gutil.go:46
+   7).  github.com/gogf/gf/net/ghttp.(*middleware).Next
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_request_middleware.go:47
+   8).  github.com/gogf/gf/net/ghttp.(*Server).ServeHTTP
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_server_handler.go:122
+2. runtime error: invalid memory address or nil pointer dereference
+
+2021-05-28 20:11:17.036 500 "GET http 127.0.0.1:8199 /hello/db HTTP/1.1" 0.000, 127.0.0.1, "", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+Stack:
+1. runtime error: invalid memory address or nil pointer dereference
+   1).  github.com/gogf/gf/net/ghttp.niceCallFunc.func1
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_func.go:38
+   2).  master_home_api/app/api.(*helloApi).Db
+    	/Users/zhaohuinan/Code/work/GITLAB/master_home_api/app/api/hello.go:35
+   3).  github.com/gogf/gf/net/ghttp.(*middleware).Next.func1.6
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_request_middleware.go:95
+   4).  github.com/gogf/gf/net/ghttp.niceCallFunc
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_func.go:46
+   5).  github.com/gogf/gf/net/ghttp.(*middleware).Next.func1
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_request_middleware.go:94
+   6).  github.com/gogf/gf/util/gutil.TryCatch
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/util/gutil/gutil.go:46
+   7).  github.com/gogf/gf/net/ghttp.(*middleware).Next
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_request_middleware.go:47
+   8).  github.com/gogf/gf/net/ghttp.(*Server).ServeHTTP
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_server_handler.go:122
+2. runtime error: invalid memory address or nil pointer dereference
+
+2021-05-28 20:11:17.960 500 "GET http 127.0.0.1:8199 /hello/db HTTP/1.1" 0.000, 127.0.0.1, "", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+Stack:
+1. runtime error: invalid memory address or nil pointer dereference
+   1).  github.com/gogf/gf/net/ghttp.niceCallFunc.func1
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_func.go:38
+   2).  master_home_api/app/api.(*helloApi).Db
+    	/Users/zhaohuinan/Code/work/GITLAB/master_home_api/app/api/hello.go:35
+   3).  github.com/gogf/gf/net/ghttp.(*middleware).Next.func1.6
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_request_middleware.go:95
+   4).  github.com/gogf/gf/net/ghttp.niceCallFunc
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_func.go:46
+   5).  github.com/gogf/gf/net/ghttp.(*middleware).Next.func1
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_request_middleware.go:94
+   6).  github.com/gogf/gf/util/gutil.TryCatch
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/util/gutil/gutil.go:46
+   7).  github.com/gogf/gf/net/ghttp.(*middleware).Next
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_request_middleware.go:47
+   8).  github.com/gogf/gf/net/ghttp.(*Server).ServeHTTP
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_server_handler.go:122
+2. runtime error: invalid memory address or nil pointer dereference
+
+2021-05-28 20:11:18.675 500 "GET http 127.0.0.1:8199 /hello/db HTTP/1.1" 0.000, 127.0.0.1, "", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+Stack:
+1. runtime error: invalid memory address or nil pointer dereference
+   1).  github.com/gogf/gf/net/ghttp.niceCallFunc.func1
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_func.go:38
+   2).  master_home_api/app/api.(*helloApi).Db
+    	/Users/zhaohuinan/Code/work/GITLAB/master_home_api/app/api/hello.go:35
+   3).  github.com/gogf/gf/net/ghttp.(*middleware).Next.func1.6
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_request_middleware.go:95
+   4).  github.com/gogf/gf/net/ghttp.niceCallFunc
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_func.go:46
+   5).  github.com/gogf/gf/net/ghttp.(*middleware).Next.func1
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_request_middleware.go:94
+   6).  github.com/gogf/gf/util/gutil.TryCatch
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/util/gutil/gutil.go:46
+   7).  github.com/gogf/gf/net/ghttp.(*middleware).Next
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_request_middleware.go:47
+   8).  github.com/gogf/gf/net/ghttp.(*Server).ServeHTTP
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_server_handler.go:122
+2. runtime error: invalid memory address or nil pointer dereference
+
+2021-05-28 20:11:19.210 500 "GET http 127.0.0.1:8199 /hello/db HTTP/1.1" 0.000, 127.0.0.1, "", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+Stack:
+1. runtime error: invalid memory address or nil pointer dereference
+   1).  github.com/gogf/gf/net/ghttp.niceCallFunc.func1
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_func.go:38
+   2).  master_home_api/app/api.(*helloApi).Db
+    	/Users/zhaohuinan/Code/work/GITLAB/master_home_api/app/api/hello.go:35
+   3).  github.com/gogf/gf/net/ghttp.(*middleware).Next.func1.6
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_request_middleware.go:95
+   4).  github.com/gogf/gf/net/ghttp.niceCallFunc
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_func.go:46
+   5).  github.com/gogf/gf/net/ghttp.(*middleware).Next.func1
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_request_middleware.go:94
+   6).  github.com/gogf/gf/util/gutil.TryCatch
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/util/gutil/gutil.go:46
+   7).  github.com/gogf/gf/net/ghttp.(*middleware).Next
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_request_middleware.go:47
+   8).  github.com/gogf/gf/net/ghttp.(*Server).ServeHTTP
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_server_handler.go:122
+2. runtime error: invalid memory address or nil pointer dereference
+
+2021-05-28 20:11:19.388 500 "GET http 127.0.0.1:8199 /hello/db HTTP/1.1" 0.000, 127.0.0.1, "", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+Stack:
+1. runtime error: invalid memory address or nil pointer dereference
+   1).  github.com/gogf/gf/net/ghttp.niceCallFunc.func1
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_func.go:38
+   2).  master_home_api/app/api.(*helloApi).Db
+    	/Users/zhaohuinan/Code/work/GITLAB/master_home_api/app/api/hello.go:35
+   3).  github.com/gogf/gf/net/ghttp.(*middleware).Next.func1.6
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_request_middleware.go:95
+   4).  github.com/gogf/gf/net/ghttp.niceCallFunc
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_func.go:46
+   5).  github.com/gogf/gf/net/ghttp.(*middleware).Next.func1
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_request_middleware.go:94
+   6).  github.com/gogf/gf/util/gutil.TryCatch
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/util/gutil/gutil.go:46
+   7).  github.com/gogf/gf/net/ghttp.(*middleware).Next
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_request_middleware.go:47
+   8).  github.com/gogf/gf/net/ghttp.(*Server).ServeHTTP
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_server_handler.go:122
+2. runtime error: invalid memory address or nil pointer dereference
+
+2021-05-28 20:11:19.576 500 "GET http 127.0.0.1:8199 /hello/db HTTP/1.1" 0.000, 127.0.0.1, "", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+Stack:
+1. runtime error: invalid memory address or nil pointer dereference
+   1).  github.com/gogf/gf/net/ghttp.niceCallFunc.func1
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_func.go:38
+   2).  master_home_api/app/api.(*helloApi).Db
+    	/Users/zhaohuinan/Code/work/GITLAB/master_home_api/app/api/hello.go:35
+   3).  github.com/gogf/gf/net/ghttp.(*middleware).Next.func1.6
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_request_middleware.go:95
+   4).  github.com/gogf/gf/net/ghttp.niceCallFunc
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_func.go:46
+   5).  github.com/gogf/gf/net/ghttp.(*middleware).Next.func1
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_request_middleware.go:94
+   6).  github.com/gogf/gf/util/gutil.TryCatch
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/util/gutil/gutil.go:46
+   7).  github.com/gogf/gf/net/ghttp.(*middleware).Next
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_request_middleware.go:47
+   8).  github.com/gogf/gf/net/ghttp.(*Server).ServeHTTP
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_server_handler.go:122
+2. runtime error: invalid memory address or nil pointer dereference
+
+2021-05-28 20:13:21.931 500 "GET http 127.0.0.1:8199 /hello/db HTTP/1.1" 0.000, 127.0.0.1, "", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+Stack:
+1. runtime error: invalid memory address or nil pointer dereference
+   1).  github.com/gogf/gf/net/ghttp.niceCallFunc.func1
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_func.go:38
+   2).  master_home_api/app/api.(*helloApi).Db
+    	/Users/zhaohuinan/Code/work/GITLAB/master_home_api/app/api/hello.go:35
+   3).  github.com/gogf/gf/net/ghttp.(*middleware).Next.func1.6
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_request_middleware.go:95
+   4).  github.com/gogf/gf/net/ghttp.niceCallFunc
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_func.go:46
+   5).  github.com/gogf/gf/net/ghttp.(*middleware).Next.func1
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_request_middleware.go:94
+   6).  github.com/gogf/gf/util/gutil.TryCatch
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/util/gutil/gutil.go:46
+   7).  github.com/gogf/gf/net/ghttp.(*middleware).Next
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_request_middleware.go:47
+   8).  github.com/gogf/gf/net/ghttp.(*Server).ServeHTTP
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_server_handler.go:122
+2. runtime error: invalid memory address or nil pointer dereference
+
+2021-05-28 20:15:05.813 500 "GET http 127.0.0.1:8199 /hello/db HTTP/1.1" 0.000, 127.0.0.1, "", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+Stack:
+1. runtime error: invalid memory address or nil pointer dereference
+   1).  github.com/gogf/gf/net/ghttp.niceCallFunc.func1
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_func.go:38
+   2).  master_home_api/app/api.(*helloApi).Db
+    	/Users/zhaohuinan/Code/work/GITLAB/master_home_api/app/api/hello.go:35
+   3).  github.com/gogf/gf/net/ghttp.(*middleware).Next.func1.6
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_request_middleware.go:95
+   4).  github.com/gogf/gf/net/ghttp.niceCallFunc
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_func.go:46
+   5).  github.com/gogf/gf/net/ghttp.(*middleware).Next.func1
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_request_middleware.go:94
+   6).  github.com/gogf/gf/util/gutil.TryCatch
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/util/gutil/gutil.go:46
+   7).  github.com/gogf/gf/net/ghttp.(*middleware).Next
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_request_middleware.go:47
+   8).  github.com/gogf/gf/net/ghttp.(*Server).ServeHTTP
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_server_handler.go:122
+2. runtime error: invalid memory address or nil pointer dereference
+
+2021-05-28 20:15:08.091 500 "GET http 127.0.0.1:8199 /hello/db HTTP/1.1" 0.001, 127.0.0.1, "", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+Stack:
+1. runtime error: invalid memory address or nil pointer dereference
+   1).  github.com/gogf/gf/net/ghttp.niceCallFunc.func1
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_func.go:38
+   2).  master_home_api/app/api.(*helloApi).Db
+    	/Users/zhaohuinan/Code/work/GITLAB/master_home_api/app/api/hello.go:35
+   3).  github.com/gogf/gf/net/ghttp.(*middleware).Next.func1.6
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_request_middleware.go:95
+   4).  github.com/gogf/gf/net/ghttp.niceCallFunc
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_func.go:46
+   5).  github.com/gogf/gf/net/ghttp.(*middleware).Next.func1
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_request_middleware.go:94
+   6).  github.com/gogf/gf/util/gutil.TryCatch
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/util/gutil/gutil.go:46
+   7).  github.com/gogf/gf/net/ghttp.(*middleware).Next
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_request_middleware.go:47
+   8).  github.com/gogf/gf/net/ghttp.(*Server).ServeHTTP
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_server_handler.go:122
+2. runtime error: invalid memory address or nil pointer dereference
+
+2021-05-28 20:15:09.230 500 "GET http 127.0.0.1:8199 /hello/db HTTP/1.1" 0.001, 127.0.0.1, "", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+Stack:
+1. runtime error: invalid memory address or nil pointer dereference
+   1).  github.com/gogf/gf/net/ghttp.niceCallFunc.func1
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_func.go:38
+   2).  master_home_api/app/api.(*helloApi).Db
+    	/Users/zhaohuinan/Code/work/GITLAB/master_home_api/app/api/hello.go:35
+   3).  github.com/gogf/gf/net/ghttp.(*middleware).Next.func1.6
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_request_middleware.go:95
+   4).  github.com/gogf/gf/net/ghttp.niceCallFunc
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_func.go:46
+   5).  github.com/gogf/gf/net/ghttp.(*middleware).Next.func1
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_request_middleware.go:94
+   6).  github.com/gogf/gf/util/gutil.TryCatch
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/util/gutil/gutil.go:46
+   7).  github.com/gogf/gf/net/ghttp.(*middleware).Next
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_request_middleware.go:47
+   8).  github.com/gogf/gf/net/ghttp.(*Server).ServeHTTP
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_server_handler.go:122
+2. runtime error: invalid memory address or nil pointer dereference
+
+2021-05-28 20:15:11.044 500 "GET http 127.0.0.1:8199 /hello/db HTTP/1.1" 0.000, 127.0.0.1, "", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+Stack:
+1. runtime error: invalid memory address or nil pointer dereference
+   1).  github.com/gogf/gf/net/ghttp.niceCallFunc.func1
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_func.go:38
+   2).  master_home_api/app/api.(*helloApi).Db
+    	/Users/zhaohuinan/Code/work/GITLAB/master_home_api/app/api/hello.go:35
+   3).  github.com/gogf/gf/net/ghttp.(*middleware).Next.func1.6
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_request_middleware.go:95
+   4).  github.com/gogf/gf/net/ghttp.niceCallFunc
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_func.go:46
+   5).  github.com/gogf/gf/net/ghttp.(*middleware).Next.func1
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_request_middleware.go:94
+   6).  github.com/gogf/gf/util/gutil.TryCatch
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/util/gutil/gutil.go:46
+   7).  github.com/gogf/gf/net/ghttp.(*middleware).Next
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_request_middleware.go:47
+   8).  github.com/gogf/gf/net/ghttp.(*Server).ServeHTTP
+    	/Users/zhaohuinan/Code/study/go/pkg/mod/github.com/gogf/gf@v1.15.7/net/ghttp/ghttp_server_handler.go:122
+2. runtime error: invalid memory address or nil pointer dereference
+
