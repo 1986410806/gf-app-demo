@@ -27,3 +27,24 @@
         Path   = "logs/sql"
         Level  = "all"
         Stdout = true
+
+
+[redis]
+    default = "127.0.0.1:6379,0?maxIdle=5&maxActive=100&idleTimeout=600"
+    cache   = "127.0.0.1:6379,1,123456?idleTimeout=600"
+
+
+[gfcli]
+    [[gfcli.gen.model]]
+        link   = "mysql:root:zhh123@tcp(127.0.0.1:3306)/test"
+        tables = "user"
+    [[gfcli.gen.model]]
+            link   = "mysql:root:zhh123@tcp(127.0.0.1:3306)/test"
+            tables = "test"
+
+    [[gfcli.gen.dao]]
+        link   = "mysql:root:zhh123@tcp(127.0.0.1:3306)/test"
+        tables = "user"
+    [[gfcli.gen.dao]]
+        link   = "mysql:root:zhh123@tcp(127.0.0.1:3306)/test"
+        tables = "test"
