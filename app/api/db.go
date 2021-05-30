@@ -12,7 +12,6 @@ var Db = dbApi{}
 
 type dbApi struct{}
 
-// Index  a demonstration route handler for output "Hello World!".
 func (*dbApi) GetAll(r *ghttp.Request) {
 	db := g.DB()
 
@@ -23,19 +22,19 @@ func (*dbApi) GetAll(r *ghttp.Request) {
 	l, err := db.GetAll("select * from test;")
 	// res, err := db.Table(test_model).Data(test_model).InsertIgnore()
 
-	fmt.Printf("%#v", l, err)
+	fmt.Printf("%+v %s", l, err)
 
 	r.Response.WriteJsonExit(l)
 }
 
 func (*dbApi) Insert(r *ghttp.Request) {
 
-	test_model := test.Entity{
+	testModel := test.Entity{
 		Name: "2ts",
 		Sex:  11,
 	}
 
-	res, err := dao.Test.Insert(test_model)
+	res, err := dao.Test.Insert(testModel)
 
 	if err != nil {
 		r.Response.Write(err)
