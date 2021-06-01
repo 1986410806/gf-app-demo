@@ -1,7 +1,7 @@
 package boot
 
 import (
-	_ "master_home_api/packed"
+	_ "gf-app-demo/packed"
 )
 
 func init() {

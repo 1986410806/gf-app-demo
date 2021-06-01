@@ -4,9 +4,17 @@
 
 package internal
 
+import (
+	"github.com/gogf/gf/os/gtime"
+)
+
 // Test is the golang structure for table test.
 type Test struct {
-	Id   int    `orm:"id,primary" json:"id"`   //
-	Name string `orm:"name"       json:"name"` //
-	Sex  int    `orm:"sex"        json:"sex"`  //
+	Id        int         `orm:"id,primary" json:"id"`        //
+	Name      string      `orm:"name"       json:"name"`      //
+	Sex       int         `orm:"sex"        json:"sex"`       //
+	Birth     *gtime.Time `orm:"birth"      json:"birth"`     //
+	CreatedAt *gtime.Time `orm:"created_at" json:"createdAt"` //
+	UpdatedAt *gtime.Time `orm:"updated_at" json:"updatedAt"` //
+	DeletedAt *gtime.Time `orm:"deleted_at" json:"deletedAt"` //
 }

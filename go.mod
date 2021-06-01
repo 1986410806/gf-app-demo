@@ -1,5 +1,5 @@
-module master_home_api
+module gf-app-demo
 
-require github.com/gogf/gf v1.15.7
+require github.com/gogf/gf v1.16.1
 
 go 1.16

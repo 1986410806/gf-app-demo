@@ -21,9 +21,13 @@ type TestDao struct {
 
 // TestColumns defines and stores column names for table test.
 type testColumns struct {
-	Id   string //
-	Name string //
-	Sex  string //
+	Id        string //
+	Name      string //
+	Sex       string //
+	Birth     string //
+	CreatedAt string //
+	UpdatedAt string //
+	DeletedAt string //
 }
 
 var (
@@ -33,9 +37,13 @@ var (
 		DB:    g.DB("default"),
 		Table: "test",
 		Columns: testColumns{
-			Id:   "id",
-			Name: "name",
-			Sex:  "sex",
+			Id:        "id",
+			Name:      "name",
+			Sex:       "sex",
+			Birth:     "birth",
+			CreatedAt: "created_at",
+			UpdatedAt: "updated_at",
+			DeletedAt: "deleted_at",
 		},
 	}
 )

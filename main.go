@@ -1,8 +1,8 @@
 package main
 
 import (
-	_ "master_home_api/boot"
-	_ "master_home_api/router"
+	_ "gf-app-demo/boot"
+	_ "gf-app-demo/router"
 
 	"github.com/gogf/gf/frame/g"
 )

@@ -1,11 +1,12 @@
 package api
 
 import (
-	"fmt"
+	"gf-app-demo/app/dao"
+	"gf-app-demo/library/response"
 	"github.com/gogf/gf/frame/g"
 	"github.com/gogf/gf/net/ghttp"
-	"master_home_api/app/dao"
-	"master_home_api/app/model/test"
+	"github.com/gogf/gf/util/grand"
+	"github.com/gogf/gf/util/guid"
 )
 
 var Db = dbApi{}
@@ -13,28 +14,21 @@ var Db = dbApi{}
 type dbApi struct{}
 
 func (*dbApi) GetAll(r *ghttp.Request) {
-	db := g.DB()
 
-	//test_model := model.Test{
-	//	Name: "name",
-	//	Sex:  1,
-	//}
-	l, err := db.GetAll("select * from test;")
-	// res, err := db.Table(test_model).Data(test_model).InsertIgnore()
+	list, err := dao.Test.Get()
+	if err != nil {
+		response.JsonExit(r, 400, err.Error())
+	}
 
-	fmt.Printf("%+v %s", l, err)
-
-	r.Response.WriteJsonExit(l)
+	response.JsonExit(r, 200, "操作成功", list)
 }
 
 func (*dbApi) Insert(r *ghttp.Request) {
 
-	testModel := test.Entity{
-		Name: "2ts",
-		Sex:  11,
-	}
-
-	res, err := dao.Test.Insert(testModel)
+	res, err := dao.Test.Data(g.Map{
+		dao.Test.Columns.Name: guid.S(),
+		dao.Test.Columns.Sex:  grand.N(1, 2),
+	}).Insert()
 
 	if err != nil {
 		r.Response.Write(err)
@@ -47,4 +41,37 @@ func (*dbApi) Insert(r *ghttp.Request) {
 	if err != nil {
 		r.Response.Write(err)
 	}
+}
+
+func (*dbApi) Up(r *ghttp.Request) {
+
+	res, err := dao.Test.Data(g.Map{
+		dao.Test.Columns.Name: guid.S(),
+		dao.Test.Columns.Sex:  grand.N(1, 2),
+	}).Insert()
+
+	if err != nil {
+		r.Response.Write(err)
+	}
+	id, err := res.LastInsertId()
+	if err != nil {
+		return
+	}
+	err = r.Response.WriteJson(id)
+	if err != nil {
+		r.Response.Write(err)
+	}
+}
+
+func (*dbApi) Del(r *ghttp.Request) {
+	id := r.GetInt("id")
+	result, err := dao.Test.Del(id)
+	if err != nil {
+		response.JsonExit(r, 200, err.Error(), result)
+	}
+	rs, err := result.RowsAffected()
+	if err != nil {
+		response.JsonExit(r, 200, err.Error(), result)
+	}
+	response.JsonExit(r, 200, "操作成功", rs)
 }

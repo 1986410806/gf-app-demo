@@ -20,7 +20,7 @@
 # Database.
 [database]
     [[database.default]]
-        link  = "mysql:root:zhh123@tcp(127.0.0.1:3306)/test"
+        link  = "mysql:root:zhh123@tcp(127.0.0.1:3306)/test?loc=Local"
         debug = true
     # Database logger.
     [database.logger]
@@ -36,15 +36,9 @@
 
 [gfcli]
     [[gfcli.gen.model]]
-        link   = "mysql:root:zhh123@tcp(127.0.0.1:3306)/test"
-        tables = "user"
-    [[gfcli.gen.model]]
             link   = "mysql:root:zhh123@tcp(127.0.0.1:3306)/test"
             tables = "test"
 
-    [[gfcli.gen.dao]]
-        link   = "mysql:root:zhh123@tcp(127.0.0.1:3306)/test"
-        tables = "user"
     [[gfcli.gen.dao]]
         link   = "mysql:root:zhh123@tcp(127.0.0.1:3306)/test"
         tables = "test"

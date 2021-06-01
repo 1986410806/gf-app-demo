@@ -1,8 +1,8 @@
 package api
 
 import (
+	"gf-app-demo/library/response"
 	"github.com/gogf/gf/net/ghttp"
-	"master_home_api/library/response"
 )
 
 var Hello = helloApi{}
