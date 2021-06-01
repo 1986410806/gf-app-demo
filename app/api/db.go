@@ -2,9 +2,11 @@ package api
 
 import (
 	"gf-app-demo/app/dao"
+	"gf-app-demo/app/model"
 	"gf-app-demo/library/response"
 	"github.com/gogf/gf/frame/g"
 	"github.com/gogf/gf/net/ghttp"
+	"github.com/gogf/gf/os/gtime"
 	"github.com/gogf/gf/util/grand"
 	"github.com/gogf/gf/util/guid"
 )
@@ -25,10 +27,16 @@ func (*dbApi) GetAll(r *ghttp.Request) {
 
 func (*dbApi) Insert(r *ghttp.Request) {
 
-	res, err := dao.Test.Data(g.Map{
-		dao.Test.Columns.Name: guid.S(),
-		dao.Test.Columns.Sex:  grand.N(1, 2),
-	}).Insert()
+	m := &model.Test{
+		Name:  guid.S(),
+		Sex:   grand.N(1, 2),
+		Birth: gtime.Now(),
+	}
+
+	res, err := dao.Test.Data(m).Insert()
+	if err != nil {
+		return
+	}
 
 	if err != nil {
 		r.Response.Write(err)
